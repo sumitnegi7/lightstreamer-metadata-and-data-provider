@@ -2,6 +2,7 @@
 
 # Lighstreamer Adapter Implementation
 
+![architecture](https://user-images.githubusercontent.com/63843304/234871054-4cd6e3aa-5e12-4329-8a06-4ba4f6c75256.png)
 
 
 
