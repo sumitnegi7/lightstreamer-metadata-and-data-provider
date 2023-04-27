@@ -1,0 +1,16 @@
+#!/bin/sh
+
+
+NPM=/usr/bin/npm
+PM2=/usr/bin/pm2
+if [ ! -f $NPM ]; then
+  NPM=/usr/local/bin/npm
+fi
+if [ ! -f $NPM ]; then
+  echo "Coult not find NPM"
+  exit 1
+fi
+
+cd /var/www/digitok-apis
+#sudo rm -rf node_modules
+$NPM install

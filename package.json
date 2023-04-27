@@ -1,0 +1,52 @@
+{
+  "name": "digitok-svc",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "start:dev": "NODE_ENV=development nodemon ./bin/www | pino-pretty -c -t",
+    "start:stage": "NODE_ENV=staging npm start",
+    "start:prod": "NODE_ENV=production npm start",
+    "test": "mocha",
+    "lint": "prettier -c \"./**/*.js\" && eslint \"./**/*.js\" --quiet",
+    "lint:full": "eslint \"./**/*.js\"",
+    "lint:fix": "prettier --write \"./**/*.js\" && eslint --fix './**/*.js'",
+    "db:migrate": "npx knex migrate:latest",
+    "db:seed": "npx knex seed:run"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "chalk": "^2.3.2",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "lightstreamer-adapter": "^1.5.3",
+    "pino": "^7.9.1",
+    "redis": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:nativebyte/digitok/IQO-Sony-Digitok/digitok-apis.git"
+  },
+  "author": "prashantsudeep",
+  "license": "",
+  "devDependencies": {
+    "@types/ioredis": "^5.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^9.1.3",
+    "nodemon": "^2.0.15",
+    "pino-pretty": "^7.5.4",
+    "prettier": "2.5.1",
+    "supertest": "^3.0.0"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 2
+  },
+  "main": "./bin/wwww"
+}

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+
+#!/bin/sh
+
+NPM=/usr/bin/npm
+PM2=/usr/bin/pm2
+if [ ! -f $NPM ]; then
+  NPM=/usr/local/bin/npm
+fi
+if [ ! -f $NPM ]; then
+  echo "Coult not find NPM"
+  exit 1
+fi
+
+cd /var/www/digitok-apis/
+#$PM2 stop all
+$PM2 stop iqo-webapp-backend
+$PM2 save
+$PM2 delete -s iqo-webapp-backend || :
+sudo rm -rf node_modules
+#$NPM run qa

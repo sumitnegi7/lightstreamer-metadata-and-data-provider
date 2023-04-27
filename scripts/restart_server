@@ -1,0 +1,28 @@
+#!/bin/sh
+
+#if pgrep node
+#then
+#pkill node
+#fi
+
+
+#PM2=/usr/bin/pm2
+
+##$PM2 start /opt/sonyweb/build/bundle.js
+#$PM2 start /opt/sonyweb/build/bundle.js --name=sonyapp -o /opt/sonyweb/logs/pm2.log  -e /opt/sonyweb/logs/pm2-err.log
+
+
+
+#!/bin/sh
+
+if pgrep node
+then
+pkill node
+fi
+
+
+PM2=/usr/bin/pm2
+
+#$PM2 start /opt/sonyweb/build/bundle.js
+$PM2 start /var/www/digitok-apis/bin/www --name=iqo-webapp-backend -o /var/www/digitok-apis/logs/pm2.log  -e /var/www/digitok-apis/logs/pm2-err.log
+

@@ -1,0 +1,24 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/digitok-apis
+    overwrite: true
+permissions:
+  - object: /
+    pattern: "**"
+    owner: nodejs
+    group: nodejs
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: nodejs
+  AfterInstall:
+    - location: scripts/install_build
+      timeout: 300
+      runas: nodejs
+  ApplicationStart:
+    - location: scripts/restart_server
+      timeout: 300
+      runas: nodejs
