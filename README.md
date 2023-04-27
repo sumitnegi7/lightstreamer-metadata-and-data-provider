@@ -11,7 +11,7 @@ Lightstreamer sample project for running metadata and data providers where data 
 Data Provider emits the events to the client and client responds with the acknowledgement.
 
 
-Link to our adapter file: https://github.com/sumitnegi7/lightstreamer-metadata-and-data-provider/blob/main/lightstreamer/IQO_NODE/adapters.xml
+Link to our adapter file: https://github.com/sumitnegi7/lightstreamer-metadata-and-data-provider/blob/main/lightstreamer/IQO_NODE
 
 Have also added the ``lightstreamer_conf.xml`` file we were using in the root directory of the repository.
 
