@@ -1,6 +1,6 @@
 
 
-#Lighstreamer Adapter Implementation
+# Lighstreamer Adapter Implementation
 
 
 
