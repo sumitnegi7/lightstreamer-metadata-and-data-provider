@@ -5,8 +5,8 @@
                 <adapter_class>ROBUST_PROXY_FOR_REMOTE_ADAPTER</adapter_class>
                 <classloader>log-enabled</classloader>
                 <param name="auth">Y</param>
-                <param name="auth.credentials.1.user">digitok_iqo</param>
-                <param name="auth.credentials.1.password">#@(aRl4^VB(c</param>
+                <param name="auth.credentials.1.user">username</param>
+                <param name="auth.credentials.1.password">password</param>
                 <param name="request_reply_port">4002</param>
                 <param name="timeout">36000000</param>
         </metadata_provider>
@@ -14,8 +14,8 @@
                 <adapter_class>ROBUST_PROXY_FOR_REMOTE_ADAPTER</adapter_class>
                 <classloader>log-enabled</classloader>
                 <param name="auth">Y</param>
-                <param name="auth.credentials.1.user">digitok_iqo</param>
-                <param name="auth.credentials.1.password">#@(aRl4^VB(c</param>
+                <param name="auth.credentials.1.user">username</param>
+                <param name="auth.credentials.1.password">password</param>
                 <param name="request_reply_port">4003</param>
                 <param name="notify_port">4001</param>
                 <param name="timeout">36000000</param>
